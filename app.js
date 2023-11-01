@@ -25,15 +25,24 @@ function AddNumber(){
     let a = parseFloat(document.getElementById("number1").value);
     let b = parseFloat(document.getElementById("number2").value);
     answer = document.getElementById('answerCalc');
+    if (a > 0 && b > 0){
     answer.textContent = a + b;
+    } else {
+        answer.textContent = "both need to be greater than 0";
+    }
     return false;
+    
 }
 
 function SubNumber(){
     let a = parseFloat(document.getElementById("number1").value);
     let b = parseFloat(document.getElementById("number2").value);
     answer = document.getElementById('answerCalc');
+    if (a > 0 && b > 0){
     answer.textContent = a - b;
+    } else {
+        answer.textContent = "both need to be greater than 0";
+    }
     return false;
 }
 
@@ -41,7 +50,11 @@ function MultNumber(){
     let a = parseFloat(document.getElementById("number1").value);
     let b = parseFloat(document.getElementById("number2").value);
     answer = document.getElementById('answerCalc');
+    if (a > 0 && b > 0){
     answer.textContent = a * b;
+    } else {
+        answer.textContent = "both need to be greater than 0";
+    }
     return false;
 }
 
@@ -49,6 +62,10 @@ function DivNumber(){
     let a = parseFloat(document.getElementById("number1").value);
     let b = parseFloat(document.getElementById("number2").value);
     answer = document.getElementById('answerCalc');
+    if (a > 0 && b > 0){
     answer.textContent = a / b;
+    } else {
+        answer.textContent = "both need to be greater than 0";
+    }
     return false;
 }
