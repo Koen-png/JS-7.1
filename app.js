@@ -7,3 +7,13 @@ function calculate(){
         alert("U heeft genoeg geld!")
     };
 }
+
+let clickercount = 0;
+function clicker(){
+    clickercount ++;
+    let thingamajig = document.getElementById("clicker");
+    thingamajig.textContent = "clicker count: " + clickercount
+    if (clickercount > 10){
+        clickercount = 0;
+    }
+}
